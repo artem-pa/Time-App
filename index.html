@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="date-time container">
+      <p class="date">00.00.00</p>
+      <p class="current-time">00:00:00</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="stopwatch block">
+        <div class="flex-box">
+          <p class="stopwatch__now">
+            <span class="hour">00</span>:<span class="min">00</span>:<span class="sec">00</span>.<span class="ms">0</span>
+          </p>
+          <form name="stopwatch" class="btn-block">
+            <input type="button" value="start" class="btn">
+            <input type="button" value="loop" class="btn" disabled>
+            <input type="button" value="stop" class="btn" disabled>
+            <input type="button" value="reset" class="btn" disabled>
+          </form>
+        </div>
+        <div class="flex-box">
+          <div class="list-box">
+            <ul class="stopwatch__result">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="timer block">
+        <div class="flex-box">
+          <p class="timer__set">25</p>
+          <p class="timer__minutes">minutes</p>
+          <form name="timer-set" class="btn-block">
+            <input type="button" value="+" class="btn">
+            <input type="button" value="-" class="btn">
+          </form>
+        </div>
+        <div class="flex-box">
+          <p class="timer__get">
+            <span class="min">00</span>:<span class="sec">00</span>
+          </p>
+          <form name="timer-get" class="btn-block">
+            <input type="button" value="start" class="btn">
+            <input type="button" value="stop" class="btn" disabled>
+            <input type="button" value="reset" class="btn" disabled>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
